@@ -1,0 +1,10 @@
+NPM INIT -Y
+NPM INSTALL TAILWINDCSS
+styles.css(@tailwind base; @tailwind components; @tailwind utilities;)
+npx tailwindcss build styles.css -o src/css/styles.css
+npx tailwindcss init
+Cria o index.html
+
+Quando for criar uma configuração nova, tem que realizar o build (npx tailwindcss build styles.css -o src/css/styles.css)
+
+
