@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,84 @@
     <title>Construção de Layout</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="container bg-green-500 mx-auto p-4 my-4 text-red-900 border-red-600 border-2 rounded">
-        <p>Rodrigo</p>
+    <div class="container bg-red-300 mx-auto p-4 my-4 text-red-900 border-red-600 border-2">
+        <p>O texto do container</p>
+    </div>
+    <!---Exercício 1-->
+    <div class="container bg-green-300 md:bg-blue-800">
+        <p>Exercício 1</p>
+    </div>
+    <!--Box Sizing-->
+    <div class="container bg-purple-700 border-2 border-purple-900 m-4 border-box p-10">
+        <p>Border box</p>
+    </div>
+    <div class="container bg-green-100 border-2 border-green-900 m-4 box-content p-10">
+        <p>Box content</p>
     </div>
 
+    <!--Display-->
+    <div class="container">
+        <span class="block bg-red-300">Não são elementos de bloco</span>
+        <span class="block bg-red-300">Não são elementos de bloco</span>
+        <div class="bg-blue-500 inline-block">Block</div>
+        <div class="bg-blue-500 inline-block">Block</div>
+        <div class="bg-green-900 hidden">Estou aparecendo</div>
+    </div>
+    <!--Exercício 2-->
+    <div class="container bg-indigo-500 m-6 p-6">
+        <div class="bg-yellow-300 inline-block">Div 1</div>
+        <div class="bg-gray-400 inline-block">Div 2</div>
+        <div class="bg-purple-400 inline-block">Div 3</div>
+    </div>
 
+    <!--Float-->
+    <div class="bg-gray-600 float-right">Float right</div>
+    <div class="bg-gray-700 float-left">Float left</div>
+    <div class="clearfix"></div>
+    <div class="bg-gray-500 float-left">Float left</div>
+    <div class="bg-gray-400 float-right">Float right</div>
+    <div class="clearfix"></div>
+
+    <div class="overflow-hidden h-16 m-6 bg-red-300">
+        <p>Testando overflow HIDDEN</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+
+    <div class="overflow-auto h-16 m-6 bg-red-300">
+        <p>Testando overflow AUTO</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+
+    <div class="overflow-x-auto h-16 m-6 bg-green-300">
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+    </div>
+
+    <div class="overflow-y-auto h-16 m-6 bg-purple-300">
+        <p>Testando overflow Y AUTO</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+
+    <!--Positions-->
+    <div class="relative bg-pink-200">
+        Teste
+        <div class="absolute top-0 right-0 bg-pink-400">
+            Absolute
+        </div>
+    </div>
+
+    <div class="container h-10 bg-yellow-400 relative m-10">
+        container
+        <div class="absolute bottom-0 right-0 bg-green-100">Div</div>
+    </div>
 </body>
+
 </html>
